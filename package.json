@@ -1,5 +1,5 @@
 {
-  "name": "logger",
+  "name": "winston-screenlogger",
   "version": "0.1.0",
   "description": "A simple logger for node and phantom",
   "main": "logger.js",
