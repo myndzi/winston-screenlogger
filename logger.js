@@ -40,6 +40,7 @@ module.exports =
 	})();
 
 	Logger.prototype.log = function (type, msg, meta, callback) {
+        if (!msg && meta) { msg = meta; }
         var name = this.tag;
         
 		var out = '',
