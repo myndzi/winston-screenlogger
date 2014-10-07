@@ -13,9 +13,9 @@ module.exports =
 		var tag = this.tag = opts.tag || 'Logger';
         
         this.name = 'screenLogger';
-		this.level = process.env.DEBUG_ALL ||
-				process.env['DEBUG_'+tag.replace(/\S+/g, '').toUpperCase()] ||
-				opts.level || Logger.defaultLevel;
+		this.level = process.env['DEBUG_'+tag.replace(/\S+/g, '').toUpperCase()] ||
+                     opts.level || process.env.DEBUG_ALL || Logger.defaultLevel;
+
 
 		this.newline = false;
     };
